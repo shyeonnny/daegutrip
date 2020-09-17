@@ -1,0 +1,128 @@
+@charset "utf-8";
+
+/* 스킵 내비게이션 */
+#skip{position: relative;}
+#skip a{position: absolute; left: 0px; top:-55px; border: 1px solid #fff; color: #fff; 
+        background: #333; line-height: 30px; width: 160px; text-align: center;}
+#skip a:active,
+#skip a:focus {top: 0;}
+
+
+
+/* 레이아웃 */
+#wrap{}
+#header{height: 170px; background: rgb(252, 223, 245);}
+#nav{height: 100px; background: #fdf2f9;}
+#contents{}
+#footer{height: 200px; background: rgb(230, 230, 230);}
+
+
+/* 폰트 초기화 */
+
+
+
+
+/* 컨텐츠 레이아웃 */
+#cont_nav{background-color:rgb(255, 242, 242); display:none;}
+#cont_tit{background-color:rgb(255, 255, 255);}
+#cont_ban{background-color: rgb(248, 228, 246);}
+#cont_cont{height: 700px;background-color:rgb(255, 242, 242)}
+
+
+
+/* 컨테이너 */
+.container {width: 990px; margin: 0 auto; height: inherit;}
+
+
+/* 헤더 */
+.header .header-tit{}
+.header .header-tit h1 {text-align: left; font-size: 100px; font-family: 'Grandstander', cursive; padding-top: 10px; }
+
+
+/* 전체 메뉴 */
+.nav{overflow: hidden; padding: 30px 0;}
+.nav > div{float: left; width: 20%; margin-bottom: 50px;}
+.nav > div:last-child {width: 20%;}
+.nav > div.last {width: 20%;}
+.nav > div h3 { font-size: 40px; color: #c95db7; margin-bottom: 10px; font-family: 'Do Hyeon', sans-serif;}
+.nav > div ol li a:hover { text-decoration: underline;}
+
+/*.nav > div ol {overflow: hidden;}
+.nav > div ol li {float: left; width:50%;}
+.nav > div.last ol li { width: 100%;} */
+
+/* 푸터 */
+.footer{}
+.footer .footer-menu{text-align: center;}
+.footer .footer-menu a {color: rgb(0, 0, 0); padding: 30px; display: inline-block;}
+.footer .footer-menu a:hover {color: rgb(209, 206, 206);}
+
+
+/* 타이틀 */
+.tit {position:relative;}
+.tit h2 {font-size :50px; text-align : center; padding:10px 0; letter-spacing: 2px; color: rgb(94, 92, 92);
+        font-family: 'Do Hyeon', sans-serif;}
+.tit .btn{position: absolute; top:10px; right:0; width:60px; height:60px; background: url(icon.png) no-repeat 0 -600px}
+.tit .btn.on {background-position: 0 -660px;}
+
+
+
+/* 컨텐츠 */
+.cont{overflow: hidden; padding-top : 30px;}
+.cont .column{position: relative; float:left; width: 289px; height: 363px; margin: 0 30px 30px 0; padding-right : 30px;}
+.cont .col1 {border-right: 1px solid #c8c8c8;}
+.cont .col2 {border-right: 1px solid #c8c8c8;}
+.cont .col3 {margin-right: 0; padding-right: 0;}
+
+.cont .column .ico_img {display: block; width: 60px; height: 60px; 
+                        background: url(heart.png) no-repeat; position: absolute; left: 0; top: 0;}
+.cont .column .ico_tit {padding-left: 70px; font-size: 16px; color:#2b2d2e;}
+.cont .column .ico_desc {padding-left: 70px; border-bottom: 1px solid #c8c8c8; padding-bottom:15px; margin-bottom: 15px;}
+
+
+/* 게시판 */
+.notice {position: relative;}
+.notice h4 {font-size: 14px; color: black; padding-bottom: 3px; font-weight: bold;}
+.notice ul li {overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+        background: url(dot.gif) no-repeat 0 8px; padding-left: 8px;}
+.notice ul li a {font-size: 13px;}
+.notice a.more {position: absolute; right:0; top:0; display: block; background: url(plus.png); width: 17px; height: 17px;}
+
+/* 게시판2 */
+.notice2 {position: relative;}
+.notice2 h4 {font-size: 14px; color: black; padding-bottom: 3px; font-weight: bold; padding-top: 30px;}
+.notice2 ul {}
+.notice2 li {overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+        background: url(dot.gif) no-repeat 0 8px ; padding-left: 8px;}
+.notice2 li a {font-size: 13px;}
+.notice2 li a span {}
+.notice2 a.more {position: absolute; right:0; top:0; display: block; background: url(plus.png); width: 17px; height: 17px;
+                margin-top: 30px;}
+
+
+/* 푸터 */
+.footer {position: relative;}
+.footer .face {position: absolute; left: 420px; top: 60px; width: 0; height: 0; background: url(face.png) no-repeat;
+        text-indent: -9999px;}
+.footer .blog {position: absolute; left: 570px; top: 55px; width: 0; height: 0; background: url(blog.png) no-repeat;
+        text-indent: -9999px;}
+.footer .insta {position: absolute; left: 500px; top: 60px; width: 0; height: 0; background: url(insta.png) no-repeat;
+        text-indent: -9999px;}
+
+
+/* 투두리스트 */
+* {box-sizing:border-box;}
+#wrapper {margin:0 auto;}
+h2 {text-align:center; font-size: 40px; padding-top : 20px; padding-bottom : 20px;}
+form {background-color:#f7e5f1; padding:30px 40px; color:white; text-align:center;}
+input {border:none; width:440px;padding:10px;float:left;font-size:20px;}
+.addBtn { padding:10px;width:50px;border:none;background-color:#fff;box-shadow:1px 2px 4px #faade3;color:#555; text-align:center;
+        font-size:14px; cursor:pointer;transition:0.3;}
+form::after { content:""; display:table; clear:both;}
+form::after { content:"";display:table; clear:both;}
+ul{margin:0;padding:0;list-style: none;}
+ul li{ cursor:pointer; position:relative;padding:12px 8px 12px 40px; background: #eee; font-size:18px;transition: 0.2s;}
+ul li:nth-child(odd) { background-color:#f9f9f9;}
+ul li:hover { background-color:#ddd; }
+.close { position:absolute; right:0; top:0; padding:12px 16px; border:none; background:rgba(255,255,255,0) }
+.close:hover { background-color:#fa84dc; color:white; }
